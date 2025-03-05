@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#hero {
+  margin: 30px;
+}
+#hero .head_text h1 {
+  font-size: 30px;
+  color: #111111;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+}
+#hero .cards {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+#hero .cards .cards_img {
+  width: 100%;
+}
+#hero .cards .cards_img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero .cards_text {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#hero .cards_text h2 {
+  font-size: 20px;
+  color: #111111;
+  font-family: "Jost", sans-serif;
+}
+#hero .cards_text h6 {
+  font-size: 18px;
+  color: #666666;
+  font-family: "Jost", sans-serif;
+}
+
+#banner .left_cards .head h1 {
+  font-size: 22px;
+  color: #111111;
+  font-family: "Jost", sans-serif;
+}
+#banner .left_cards .head .catagories {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+#banner .left_cards .head .catagories ul {
+  display: flex;
+  justify-content: space-between;
+}
+#banner .left_cards .head .catagories ul li a {
+  font-size: 16px;
+  color: #666666;
+}
+#banner .product .product_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#banner .product .product_img:hover .product_hover {
+  opacity: 1;
+}
+#banner .product .product_img img {
+  width: 100%;
+  height: 100%;
+}
+#banner .product .product_img .product_hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+#banner .product .product_img .product_hover .hover_img {
+  width: 100%;
+}
+#banner .product .product_img .product_hover .icons {
+  position: absolute;
+  bottom: 20px;
+  left: 90px;
+}
+#banner .product .product_img .product_hover .icons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#banner .product .product_img .product_hover .icons ul li {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner .product .product_img .product_hover .icons ul li:hover {
+  background-color: rgb(187, 105, 27);
+}
+#banner .product .product_img .product_hover .icons ul li i {
+  font-size: 20px;
+  color: white;
+}
+#banner .product_text .text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+#banner .product_text .text h4 {
+  font-size: 16px;
+  color: #666666;
+}
+#banner .product_text .text ul {
+  display: flex;
+  gap: 5px;
+}
+#banner .product_text .text ul .blue {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: beige;
+}
+#banner .product_text .text ul .red {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(48, 119, 55);
+}
+#banner .product_text .text ul .green {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(113, 157, 199);
+}
+#banner .product_text .text p {
+  font-size: 20px;
+  color: black;
+}
+#banner .cards_box {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+#banner .cards_box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#banner .cards_box .card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+}
+#banner .cards_box .card_content h3 {
+  color: #666666;
+  font-size: 14px;
+}
+#banner .cards_box .card_content h2 {
+  color: #111111;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
